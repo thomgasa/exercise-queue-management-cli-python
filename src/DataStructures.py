@@ -12,10 +12,14 @@ class Queue:
        
         self._queue.append(item)
         
-    def dequeue(self):
+    def dequeue(self, number_to_delete):        
+        """         
+        Delete a item in the queue         
+        """         
+        self._queue.pop(int(number_to_delete)-1)
 
-        pass
     def get_queue(self):
         return self._queue
+
     def size(self):
         pass
